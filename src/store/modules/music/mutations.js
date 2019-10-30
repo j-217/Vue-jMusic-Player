@@ -58,5 +58,9 @@ export default {
   // 设置搜索新词
   setResearchFlag(state, payload){
     state.researchFlag = payload
+  },
+  // 设置每日推荐歌曲
+  setDailySongs(state, payload){
+    state.dailySongs = payload
   }
 }

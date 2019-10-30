@@ -12,8 +12,8 @@
         <div class="context">
           <ul>
             <li :class="{'current-list': currentListFlag === 'myZone'}" @click="currentListFlag = 'myZone'">我的</li>
-            <li :class="{'current-list': currentListFlag === 'discover'}" @click="currentListFlag = 'discover'">发现</li>
-            <li :class="{'current-list': currentListFlag === 'recommend'}" @click="currentListFlag = 'recommend'">推荐</li>
+            <li :class="{'current-list': currentListFlag === 'home'}" @click="goPage('home')">发现</li>
+            <li :class="{'current-list': currentListFlag === 'dailySongs'}" @click="goPage('dailySongs')">推荐</li>
           </ul>
         </div>
         <div class="right-btn" @click="goSearchPage">
@@ -82,7 +82,7 @@ import { mapState } from 'vuex'
     data(){
         return {
             showMaskFlag: false,
-            currentListFlag: 'discover',
+            currentListFlag: 'home',
         }
     },
 
@@ -102,16 +102,19 @@ import { mapState } from 'vuex'
             window.sessionStorage.removeItem('store')
             window.removeEventListener('beforeunload', ()=>{})
             window.location.reload()
-            // this.$router.push({
-            //   name: 'login'
-            // })
           })
+      },
+
+      goPage(type){
+        this.currentListFlag = type
+        this.$router.push({
+          name: type,
+        })
       },
 
       goSearchPage(){
         this.$router.push({
           path: '/search/'
-          // name: 'search'
         })
       },
     }

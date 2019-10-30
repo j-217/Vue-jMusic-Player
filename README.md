@@ -53,6 +53,12 @@ npm run build
     <img src="./resource/9_search_result.png" height="300" style="padding: 1rem 0;">
   </div>
 
+- 每日推荐歌曲
+  <div>
+    <img src="./resource/gif/5_daily_songs.gif" height="300" style="padding: 1rem 0;">
+    <img src="./resource/10_daily_songs.png" height="300" style="padding: 1rem 0;">
+  </div>
+
 ## 功能说明
 1. 用户登录：</br>
 由于部分API需登录后使用，目前仅使用手机登录方式并且使用get方式提交数据，为防止个人信息泄露使用时请申请测试号码。
@@ -89,6 +95,9 @@ npm run build
 8. 搜索结果页：</br>
 - 默认显示30条搜索结果
 - 上拉加载更多搜索结果
+
+9. 每日推荐歌曲：</br>
+- 歌曲列表滑动动画
   
 ## Bug记录
 
@@ -106,5 +115,5 @@ npm run build
 
 ## 待完善功能
 
-- “我的”、“推荐”页面功能
+- “我的”页面功能
 - 优化ICON图标

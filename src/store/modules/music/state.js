@@ -35,4 +35,6 @@ export default {
   searchResultList: [],
   // 搜索新词
   researchFlag: false,
+  // 每日推荐歌曲
+  dailySongs: [],
 }

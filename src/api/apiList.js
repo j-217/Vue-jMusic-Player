@@ -9,7 +9,7 @@ const apiList = {
     queryPersonalFM: '/personal_fm',
 
     // 获取歌单详情
-    queryPlaylistDetail: '/playlist/detail',
+    // queryPlaylistDetail: '/playlist/detail',
     // 获取歌曲详情
     queryMusicDetail: '/song/detail',
     // 获取歌曲Url
@@ -34,6 +34,9 @@ const apiList = {
     // 获取热搜列表（详细）
     querySearchHotDetail: '/search/hot/detail',
     // 获取搜索结果列表
-    querySearchResultList: '/search'
+    querySearchResultList: '/search',
+
+    // 获取每日推荐歌曲
+    queryDailySongs: '/recommend/songs',
 };
 export default apiList

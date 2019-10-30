@@ -1,5 +1,5 @@
 <template>
-  <div class="album-detail-box" :style="`background-image: url(${songsListDetail.playlist.coverImgUrl})`">
+  <div class="songslist-detail-box" :style="`background-image: url(${songsListDetail.playlist.coverImgUrl})`">
     <!-- header -->
     <common-header :title="title"></common-header>
     <!-- body -->
@@ -109,7 +109,7 @@ export default {
 <style scoped lang="less">
 @import '../assets/css/base.less';
 
-.album-detail-box{
+.songslist-detail-box{
   background-color: #eee;
   height: 100%;
   width: 100%;

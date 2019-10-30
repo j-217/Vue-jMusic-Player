@@ -44,7 +44,13 @@ const routes = [
       {path: '/', component: () => import('../views/Search/Hot.vue')},
       {path: 'result', component: () => import('../views/Search/SearchResult.vue')}
     ]
-  }
+  },
+  {
+    path: '/dailySongs',
+    name: 'dailySongs',
+    component: () => import('../views/DailySongs.vue')
+  },
+  
 ]
 
 const router = new VueRouter({

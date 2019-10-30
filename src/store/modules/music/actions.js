@@ -120,4 +120,11 @@ export default {
       }  
     }
   },
+  // 获取每日推荐歌曲
+  async getDailySongs(context, payload){
+    let result = await getData('queryDailySongs')
+    if(result.code === 200){
+      context.commit('setDailySongs', result.data.dailySongs)
+    }
+  },
 }
