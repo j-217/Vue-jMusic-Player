@@ -24,7 +24,8 @@ npm run build
 
 ## 项目运行页面
 
-> 使用Chrome iPhoneX 预览效果
+> 使用Chrome iPhoneX 预览效果 </br>
+> 图片看不到请[点击这里](https://www.jianshu.com/p/afdf4546f286)
 
 - 首页&登录展示
   <div>
